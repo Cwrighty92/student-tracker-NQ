@@ -1,28 +1,56 @@
-.App {
-  text-align: center;
+* {
+  font-family: Courier New, Courier, monospace;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+p {
+  line-height: 0em;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.app-window {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows: 50vh 50vh;
 }
 
-.App-title {
-  font-size: 1.5em;
+.block-container {
+  grid-area: 1/1/2/5;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2vh 2vh;
 }
 
-.App-intro {
-  font-size: large;
+.block-item {
+  background-color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.block-item:hover {
+  background-color: bisque;
+}
+
+.student-card {
+  border-radius: 1em;
+  padding-left: 0.75em;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 6%;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.safe {
+  background-color: green;
+}
+
+.caution {
+  background-color: orange;
+}
+
+.danger {
+  background-color: red;
+}
+
+.student-view {
+  grid-area: 2/1/3/3;
+  border: 1px black solid;
+  font-size: 72px;
 }
