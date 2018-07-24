@@ -2,21 +2,30 @@
   font-family: Courier New, Courier, monospace;
 }
 
-p {
-  line-height: 0em;
-}
-
 .app-window {
   display: grid;
-  grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-template-rows: 50vh 50vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10vh, repeat(2, 50vh);
+  grid-gap: 2vh;
 }
 
 .block-container {
-  grid-area: 1/1/2/5;
+  grid-area: 2/1/3/5;
   display: grid;
+  height: 70vh;
   grid-auto-flow: column;
   grid-gap: 2vh 2vh;
+  overflow: scroll;
+}
+
+.nav-bar {
+  margin-left: 20%;
+  margin-right: 20%;
+  grid-area: 1/1/2/5;
+  font-size: 2em;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-around;
 }
 
 .block-item {
@@ -31,6 +40,7 @@ p {
   border-radius: 1em;
   padding-left: 0.75em;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: 2% 6%;
   font-size: 1.25em;
@@ -50,7 +60,23 @@ p {
 }
 
 .student-view {
-  grid-area: 2/1/3/3;
+  grid-area: 3/1/4/3;
   border: 1px black solid;
-  font-size: 72px;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-student-input {
+  font-size: 0.75em;
+}
+
+.submit-student {
+  width: 10em;
+  height: 3em;
+}
+
+.select-box {
+  margin: 2px;
+  width: 50%;
 }
