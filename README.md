@@ -15,8 +15,6 @@ Ensure you have at least NodeJS v10.1.0 installed on your machine. JavaScript co
 ```
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
-    "axios": "^0.18.0",
-    "moment": "^2.22.2",
     "react": "^16.4.2",
     "react-router-dom": "^4.3.1"
 ```
