@@ -1,45 +1,44 @@
-# FE2-FT-dev-pathway-student-tracker
+# Student Tracker
 
-## Learning outcomes
+Student Tracker is a application built with react which moves students from different cohorts based on pass and fail the design is similar to trello with the students being cards
 
-* The importance of 'Thinking in React' when developing with React
-* Clear understanding of 'where state should sit' and how we decide
-* Translate user stories into software that delivers business value
-* Extracting business logic (and making sure it's well tested)
-* Consolidate your understanding of the fundamentals of React
+## Prerequisites
 
-## The problem
+Ensure you have at least NodeJS v10.1.0 installed on your machine. JavaScript code has been written to ES6 standard.
 
-* Since launching Developer Pathway, Northcoders has identified a need to better track students' journeys through the course.
-* In particular, every two weeks, during 'block review' - students are either graduated from a block if their understanding of the block's learning outcomes is sufficient, or they are asked to resit it.
-* New students also join the course (on block 1) on the day of a block review
+## Dependencies
 
-## The desired solution
+1.  Clone this repository to your machine
 
-Northcoders has hired you and your pair as contractors to deliver a prototype for a 'student tracker'. A demo of said tracker will be shown to you at the start of the sprint - imagine it was built using a 'no-code' prototyping tool such as [proto.io](https://proto.io). At this stage, persistent storage (whether on the server or locally) isn't required, but a working user interface is to demonstrate how the app might work.
+2. The following dependencies are required -
 
-Northcoders' team have given you a list of user stories for the application:
+```
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+    "axios": "^0.18.0",
+    "moment": "^2.22.2",
+    "react": "^16.4.2",
+    "react-router-dom": "^4.3.1"
+```
+3. These can be installed running 
 
-* As an admin, I want to add new students to the system so that I can begin tracking them.
-* As an admin, I want to see which block each student is in so that I know where they are in the course.
-* As an admin, I want to graduate all relevant students from their respective blocks when it’s appropriate to do so.
-* As an admin, I want to see which cohort a student began the course on so that I can see how starting cohorts diverge.
-* As an admin, I want a visual indicator that I’ve either graduated a student or not from a block, so I can make sure I’ve considered all the students.
-* As an admin, I want a visual indicator of ‘how many times’ a student has been on a block so that I can make sure we’re properly supporting students who are resitting.
-* As an admin, I want to clearly see how many students are on each block so that I can plan accordingly.
-* As an admin, I want to clearly see how many students are on the course so that I can plan accordingly.
-* As an admin, I want to see ‘graduation rates’ from each block so that I can prioritise which parts of the course to improve.
-* As an admin, I want to see a list of graduates so I can feel good about my job.
-* As an admin, I want to see what the average time through the course is for graduates so that I can monitor it over time.
-* As an admin, I want to be able to remove people from the course so that we can account for the occasional leaver.
-* As an admin, I want to see how many pathways through the course there have been so that we can communicate that to relevant stakeholders.
+```
+npm install
+```
+## Running the app
 
-**Quick, before we lose a student!**
+To run the application run the following command in terminal:
 
-## Tips
+```
+npm start
+```
 
-* **Every** time you develop a React app from scratch, you should go through the process of [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
-* The user stories don't necessarily need to be implemented in the order given - sometimes it's best to pick off low hanging fruit first
-# northcoders-student-tracker
-# northcoders-student-tracker
-# student-tracker
+React will start a development server and open a browser window to show the Northcoders News App.
+
+## Built With
+
+```
+- [NPM](https://docs.npmjs.com) - JavaScript package manager
+- [React](https://reactjs.org) - JavaScript based front-end framework
+- [React Router DOM](https://github.com/ReactTraining/react-router#readme) - Routing for React
+```
