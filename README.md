@@ -42,3 +42,4 @@ Northcoders' team have given you a list of user stories for the application:
 * The user stories don't necessarily need to be implemented in the order given - sometimes it's best to pick off low hanging fruit first
 # northcoders-student-tracker
 # northcoders-student-tracker
+# student-tracker
