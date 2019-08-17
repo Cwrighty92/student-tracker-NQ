@@ -23,8 +23,8 @@ class Blocks extends Component {
           student.repeats === 0
             ? (classNameSetter += " safe")
             : student.repeats === 1
-              ? (classNameSetter += " caution")
-              : (classNameSetter += " danger");
+            ? (classNameSetter += " caution")
+            : (classNameSetter += " danger");
           return (
             <div className={classNameSetter}>
               <p>{student.name}</p>
@@ -44,7 +44,8 @@ class Blocks extends Component {
                           "pass"
                         )
                       }
-                    />Pass
+                    />
+                    Pass
                     <input
                       type="radio"
                       name="review"
@@ -56,7 +57,8 @@ class Blocks extends Component {
                           "fail"
                         )
                       }
-                    />Fail
+                    />
+                    Fail
                   </form>
                 </span>
               </p>
